@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Play</class>
+ <widget class="QWidget" name="Play">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>953</width>
+    <height>636</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Play</string>
+  </property>
+  <widget class="HL::VideoWidget" name="VideoWindow">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>851</width>
+     <height>581</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="HL::Slider" name="slider">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>530</y>
+     <width>850</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>999</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="openFileBtn">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>550</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="statusBtn">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>550</y>
+     <width>63</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>播放停止</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>HL::VideoWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>VideoWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>HL::Slider</class>
+   <extends>QSlider</extends>
+   <header>Slider.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>openFileBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Play</receiver>
+   <slot>OpenFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>224</x>
+     <y>687</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>775</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>statusBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Play</receiver>
+   <slot>PlayOrPause()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>673</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>138</x>
+     <y>758</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider</sender>
+   <signal>sliderPressed()</signal>
+   <receiver>Play</receiver>
+   <slot>SliderPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>96</x>
+     <y>709</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>91</x>
+     <y>753</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider</sender>
+   <signal>sliderReleased()</signal>
+   <receiver>Play</receiver>
+   <slot>SliderRelease()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>61</x>
+     <y>709</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>52</x>
+     <y>767</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OpenFile()</slot>
+  <slot>PlayOrPause()</slot>
+  <slot>SliderRelease()</slot>
+  <slot>SliderPress()</slot>
+ </slots>
+</ui>

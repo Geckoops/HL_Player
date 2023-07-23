@@ -1,0 +1,33 @@
+<RCC>
+  <qresource prefix="/">
+    <file>icon/playList_hover.png</file>
+    <file>icon/playList.png</file>
+    <file>icon/itemRemove.png</file>
+    <file>icon/itemRemove_hover.png</file>
+    <file>icon/itemPlay.png</file>
+    <file>icon/itemPlay_hover.png</file>
+    <file>icon/left.png</file>
+    <file>icon/right.png</file>
+    <file>icon/logo.png</file>
+    <file>icon/close.png</file>
+    <file>icon/minimize.png</file>
+    <file>icon/fullScreen.png</file>
+    <file>icon/normalScreen.png</file>
+    <file>icon/file.png</file>
+    <file>icon/next.png</file>
+    <file>icon/next_hover.png</file>
+    <file>icon/pause.png</file>
+    <file>icon/pause_hover.png</file>
+    <file>icon/play.png</file>
+    <file>icon/play_hover.png</file>
+    <file>icon/prev.png</file>
+    <file>icon/prev_hover.png</file>
+    <file>icon/slider_handle.png</file>
+    <file>icon/stop.png</file>
+    <file>icon/stop_hover.png</file>
+    <file>icon/voice_off.png</file>
+    <file>icon/voice_off_hover.png</file>
+    <file>icon/voice_on.png</file>
+    <file>icon/voice_on_hover.png</file>
+  </qresource>
+</RCC>

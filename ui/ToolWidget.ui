@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolWidget</class>
+ <widget class="QWidget" name="ToolWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>811</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>ToolWidget</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_4">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="styleSheet">
+      <string notr="true">border:none</string>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="handleWidth">
+      <number>0</number>
+     </property>
+     <property name="childrenCollapsible">
+      <bool>false</bool>
+     </property>
+     <widget class="QGroupBox" name="twLeftGroup">
+      <property name="styleSheet">
+       <string notr="true">border:none</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="3,40,0,3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="twTopGroup">
+         <property name="styleSheet">
+          <string notr="true">border:none</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0,0,0,0">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>20</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>20</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="HLabel" name="twFileName">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel
+{
+    font-size: 13px;
+	color: #BFBFBF;
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::PlainText</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QToolButton" name="tbtnOpenFile">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/icon/file.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="toolButtonStyle">
+             <enum>Qt::ToolButtonIconOnly</enum>
+            </property>
+            <property name="autoRaise">
+             <bool>false</bool>
+            </property>
+            <property name="arrowType">
+             <enum>Qt::NoArrow</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="tbtnMinimize">
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/icon/minimize.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="tbtnFullOrNormal">
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/icon/fullScreen.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="tbtnClose">
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/icon/close.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="twBlankLabel">
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/icon/logo.png);
+border:none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::NoTextInteraction</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="HL::Slider" name="twSlider">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>10</horstretch>
+           <verstretch>10</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QSlider::groove:horizontal{ 
+		height: 5px; 
+		left: 0px; 
+		right: 0px; 
+		border:0px;    
+	    border-radius:5px; 
+		background:rgba(0,0,0,50);
+ } 
+
+ QSlider::handle:horizontal{ 
+		width:  6px; 
+		height: 20px; 
+		border-radius:10px;
+		margin-top: -10px; 
+		margin-left: 0px; 
+		margin-bottom: -10px; 
+		margin-right: 0px; 
+ 		border-image:url(:/icon/slider_handle.png);
+} 
+
+QSlider::sub-page:horizontal{
+	   background:rgba(80,166,234,1);
+}</string>
+         </property>
+         <property name="maximum">
+          <number>999</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="twBottomGroup">
+         <property name="styleSheet">
+          <string notr="true">border:none</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <property name="leftMargin">
+           <number>9</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="twCurrentTime">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel
+{
+    font-size: 14px;
+	color: #BFBFBF;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>00:00:00</string>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::NoTextInteraction</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="twTotalTime">
+            <property name="styleSheet">
+             <string notr="true">QLabel
+{
+    font-size: 14px;
+	color: #BFBFBF;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>/ </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="styleSheet">
+             <string notr="true">border:none</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QToolButton" name="twStop">
+               <property name="styleSheet">
+                <string notr="true">QToolButton:!hover{
+	
+	border-image: url(:/icon/stop.png);
+}
+QToolButton:hover {
+	border-image: url(:/icon/stop_hover.png);
+}
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>25</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="twPrev">
+               <property name="styleSheet">
+                <string notr="true">
+QToolButton:hover {
+	
+	border-image: url(:/icon/prev_hover.png);
+}
+QToolButton:!hover{
+	
+	border-image: url(:/icon/prev.png);
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>25</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="tbtnPauseOrPlay">
+               <property name="styleSheet">
+                <string notr="true">
+QToolButton:!hover {
+	
+	border-image: url(:/icon/play.png);
+}
+QToolButton:hover{
+	
+	border-image: url(:/icon/play_hover.png);
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>36</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>25</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="twNext">
+               <property name="styleSheet">
+                <string notr="true">
+QToolButton:hover {
+	
+	border-image: url(:/icon/next_hover.png);
+}
+QToolButton:!hover{
+	
+	border-image: url(:/icon/next.png);
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>25</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="twVolume">
+               <property name="styleSheet">
+                <string notr="true">
+QToolButton:hover {
+	
+	border-image: url(:/icon/voice_on_hover.png);
+}
+QToolButton:!hover{
+	
+	border-image: url(:/icon/voice_on.png);
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="HL::Slider" name="twVolumeSlider">
+               <property name="styleSheet">
+                <string notr="true">
+QSlider::groove:horizontal{ 
+		height: 5px; 
+		left: 0px; 
+		right: 0px; 
+		border:0px;    
+	    border-radius:6px; 
+		background:rgba(0,0,0,50);
+ } 
+
+ QSlider::handle:horizontal{ 
+		width:  5px; 
+		height: 5px; 
+		margin-top: -10px; 
+		margin-left: 0px; 
+		margin-bottom: -10px; 
+		margin-right: 0px; 
+ 		border-image:url(:/icon/slider_handle.png);
+} 
+
+QSlider::sub-page:horizontal{
+	   background:rgba(80,166,234,1);
+}</string>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QToolButton" name="subBtn">
+            <property name="styleSheet">
+             <string notr="true">QToolButton { 
+font-size:12px; 
+width: 36px;
+height:20px;
+color:rgb(155,155,155); 
+border: 1px double  rgba(255,255,255,200);
+border-radius: 12px;
+background-color:rgba(0,0,0,200); 
+}
+QToolButton::menu-indicator {
+    image: none;
+}</string>
+            </property>
+            <property name="text">
+             <string>字幕</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="btnSpeed">
+            <property name="styleSheet">
+             <string notr="true">QToolButton { 
+font-size:12px; 
+width: 36px;
+height:20px;
+color:rgb(155,155,155); 
+border: 1px double  rgba(255,255,255,200);
+border-radius: 12px;
+background-color:rgba(0,0,0,200); 
+}
+QToolButton::menu-indicator {
+    image: none;
+}</string>
+            </property>
+            <property name="text">
+             <string>倍速</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="listBtn">
+            <property name="styleSheet">
+             <string notr="true">QToolButton:!hover {
+border-image: url(:/icon/playList.png);
+}
+QToolButton:hover{
+	border-image: url(:/icon/playList_hover.png);
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+         <zorder>twCurrentTime</zorder>
+         <zorder>twTotalTime</zorder>
+         <zorder>horizontalSpacer</zorder>
+         <zorder>horizontalSpacer_2</zorder>
+         <zorder>groupBox</zorder>
+         <zorder>listBtn</zorder>
+         <zorder>btnSpeed</zorder>
+         <zorder>subBtn</zorder>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="twRightGroup">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QListWidget" name="twListWidget">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QListWidget {
+	outline:none;
+	background-color: rgb(26,26,26);
+}
+
+QListWidget::item {
+	height: 50px;
+}
+QListWidget::item:hover {
+	background-color: rgb(50,50,50);
+}
+QListWidget::item:selected {
+	background-color: rgb(50,50,50);
+}
+
+QScrollBar::vertical {
+background:transparent;
+width:8px;
+border:0px;
+}
+
+QScrollBar::handle:vertical {
+background: rgb(80,80,80);
+width:8px;
+
+}
+
+QScrollBar::add-line:vertical {
+background:none;
+border:none;
+}
+
+QScrollBar::sub-line:vertical {
+background:none;
+background-color: rgb(26,26,26);
+border:none;
+}
+
+QScrollBar::add-page:vertical {
+
+border:none;
+background-color: rgb(26,26,26);
+}
+
+QScrollBar::sub-page:vertical {
+
+border:none;
+background-color: rgb(26,26,26);
+}
+
+
+</string>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::ExtendedSelection</enum>
+         </property>
+         <property name="movement">
+          <enum>QListView::Static</enum>
+         </property>
+         <property name="resizeMode">
+          <enum>QListView::Fixed</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>HL::Slider</class>
+   <extends>QSlider</extends>
+   <header>Slider.h</header>
+  </customwidget>
+  <customwidget>
+   <class>HLabel</class>
+   <extends>QLabel</extends>
+   <header>HLabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../res/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
